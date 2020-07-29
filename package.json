@@ -1,6 +1,6 @@
 {
-  "name": "@sealsystems/konfigurator",
-  "version": "0.0.0",
+  "name": "konfigurator",
+  "version": "0.0.1",
   "description": "Konfigurator configures systems",
   "author": {
     "name": "SEAL Systems AG",
@@ -13,23 +13,6 @@
     "url": "sealsystems/node-konfigurator"
   },
   "main": "lib",
-  "seal": {
-    "service": {
-      "name": "node-konfigurator",
-      "tags": ""
-    },
-    "packaging": {
-      "firewallExceptions": [
-        {
-          "port": 443
-        }
-      ],
-      "msi": {
-        "upgradeCode": "ac1748b2-45c7-4d4f-8dd6-d8de197ddb5e",
-        "firewallExceptionsGuid": "658fee1a-c02d-453c-8409-0798ce794125"
-      }
-    }
-  },
   "scripts": {
     "bot": "bot",
     "licenses": "license-checker --production --csv",
