@@ -202,7 +202,15 @@ jobs:
         if: github.ref != 'refs/heads/master'
         run: |
           echo "Patching package.json ..."
-          sed -i 's|"registry": "https://npm.pkg.github.com"|"registry": "https://npm.pkg.github.com", "tag": "bugfix"|' package.json
+          sed -i 's|"registry": "https://registry.npmjs.org"|"registry": "https://registry.npmjs.org", "tag": "bugfix"|' package.json
+
+      - name: Patching .npmrc
+        run: |
+          echo "Patching .npmrc ..."
+          echo "@sealsystems:registry=https://registry.npmjs.org" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Trigger release
         run: npm run release

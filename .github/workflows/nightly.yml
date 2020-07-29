@@ -62,6 +62,6 @@ jobs:
           commit-message: Update build configuration
           committer: CI Build <com.git@sealsystems.de>
           author: CI Build <com.git@sealsystems.de>
-          reviewers:
+          reviewers: ""
           team-reviewers: com-infrastructure
           token: ${{ secrets.CI_TOKEN }}
