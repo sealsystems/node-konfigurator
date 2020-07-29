@@ -1,3 +1,10 @@
+## 0.0.3 (2020-07-29)
+
+### Chores
+
+
+Publish only on npmjs.org ([229552f](https://github.com/sealsystems/node-konfigurator/commit/229552f))
+
 ## 0.0.2 (2020-07-29)
 
 ### Bug Fixes
