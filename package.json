@@ -1,0 +1,57 @@
+{
+  "name": "@sealsystems/konfigurator",
+  "version": "0.0.0",
+  "description": "Konfigurator configures systems",
+  "author": {
+    "name": "SEAL Systems AG",
+    "email": "support@sealsystems.de",
+    "url": "http://www.sealsystems.de"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "sealsystems/node-konfigurator"
+  },
+  "main": "lib",
+  "seal": {
+    "service": {
+      "name": "node-konfigurator",
+      "tags": ""
+    },
+    "packaging": {
+      "firewallExceptions": [
+        {
+          "port": 443
+        }
+      ],
+      "msi": {
+        "upgradeCode": "ac1748b2-45c7-4d4f-8dd6-d8de197ddb5e",
+        "firewallExceptionsGuid": "658fee1a-c02d-453c-8409-0798ce794125"
+      }
+    }
+  },
+  "scripts": {
+    "bot": "bot",
+    "licenses": "license-checker --production --csv",
+    "lint": "lint",
+    "lint:fix": "lint-fix",
+    "release": "release",
+    "test": "test-run",
+    "test:coverage": "test-coverage",
+    "test:coverage:check": "test-coverage-check",
+    "test:report": "test-report"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "release": {
+    "extends": "@sealsystems/semantic-release/node-module"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@sealsystems/eslint-config-es": "3.6.3",
+    "@sealsystems/mocha": "4.1.4",
+    "@sealsystems/semantic-release": "4.3.0"
+  }
+}
