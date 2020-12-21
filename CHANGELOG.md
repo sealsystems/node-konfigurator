@@ -1,3 +1,10 @@
+## 0.0.4 (2020-12-21)
+
+### Chores
+
+
+Trigger release ([bbf5593](https://github.com/sealsystems/node-konfigurator/commit/bbf5593))
+
 ## 0.0.3 (2020-07-29)
 
 ### Chores
