@@ -1,3 +1,12 @@
+## 0.0.5 (2020-12-26)
+
+### Chores
+
+
+Update build configuration ([4fa0375](https://github.com/sealsystems/node-konfigurator/commit/4fa0375))
+
+Update build configuration ([cdfc9c1](https://github.com/sealsystems/node-konfigurator/commit/cdfc9c1))
+
 ## 0.0.4 (2020-12-21)
 
 ### Chores
